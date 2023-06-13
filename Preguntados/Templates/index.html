@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntados</title>
+    <link rel="stylesheet" type="text/css" href="../Statics/Styles/index.css">
+    <link rel="shortcut icon" href="../Statics/img/Favicoin.png">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Preguntados</h1>
+        <div class="input-field">
+            <label for="jugador1">Jugador 1:</label>
+            <input type="text" id="jugador1">
+        </div>
+        <div class="input-field">
+            <label for="jugador2">Jugador 2:</label>
+            <input type="text" id="jugador2">
+        </div>
+        <button class="button" onclick="iniciarJuego()">Iniciar juego</button>
+    </div>
+
+    <script>
+        function iniciarJuego() {
+            var jugador1 = document.getElementById("jugador1").value;
+            var jugador2 = document.getElementById("jugador2").value;
+
+            // Redirige a la siguiente vista, tambien lleva el nombre de los jugadores
+            window.location.href = "juego.html?jugador1=" + jugador1 + "&jugador2=" + jugador2;
+        }
+    </script>
+</body>
+</html>

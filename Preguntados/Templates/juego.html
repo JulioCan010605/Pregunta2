@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="else">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Juego</title>
+	<link rel="stylesheet" type="text/css" href="../Statics/Styles/ruleta.css">
+    <link rel="shortcut icon" href="../Statics/img/Favicoin.png">
+</head>
+<body>
+	<div class="contenedor">
+		<h1>Comienza el Juego</h1>
+		<div class="concursantes">
+			<canvas id="idcanvas" width="400" height="400"></canvas>
+			<br>
+			<button onclick="sortear()"><span id="idestado">Sortear</span></button>
+			<div class="mark-winner"></div>
+		</div>
+		<div id="jugador-info">
+			<h2>Jugadores:</h2>
+			<p id="jugador1-info"></p>
+			<p id="jugador2-info"></p>
+		</div>
+	</div>
+	<script src="../Dynamics/js/script.js"></script>
+</body>
+</html>
